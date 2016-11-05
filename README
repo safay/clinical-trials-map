@@ -1,0 +1,9 @@
+map of global clinical trials
+
+requirements:
+coordinate with HK
+
+tooling:
+python
+download data from clinicaltrials.gov
+folium for viz
