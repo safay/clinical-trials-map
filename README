@@ -7,18 +7,29 @@ tooling:
 python
 folium for viz
 
+
+## DATA ##
+
 clinical trials delimited text file here:
 https://www.ctti-clinicaltrials.org/aact-database
 
-dependencies:
-pip install folium
-pip install pandas
-
-
 map data:
 get world TopoJSON
+http://bl.ocks.org/mbostock/raw/4090846/world-110m.json
+
+#TODO: this TopoJSON needs fixing because of wrap issue...
+fixing the wrapping issue:
+https://github.com/python-visualization/folium/issues/55
+https://github.com/Leaflet/Leaflet/pull/1293
+
 
 relate TopoJSON mapping data to clinical trials data with pandas dataframe
 
 ISO codes:
 ISO_3166-1_numeric
+
+
+## DEPENDENCIES ##
+
+pip install folium
+pip install pandas

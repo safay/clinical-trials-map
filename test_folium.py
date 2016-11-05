@@ -3,7 +3,7 @@ import json
 import random
 import pandas as pd
 
-world_geo = '/Users/safay/clinical-trial-mapper-data/world-50m.json'
+world_geo = '/Users/safay/clinical-trial-mapper-data/world-110m.json'
 
 
 json_data=open(world_geo).read()
@@ -17,7 +17,7 @@ nation_data = pd.DataFrame({'ids':nation_ids, 'values': nation_values})
 
 
 def build_test_map(filepath):
-    map = folium.Map(location=[45.5236, -122.6750], zoom_start=2, tiles='Mapbox Bright')
+    map = folium.Map(location=[45.5236, -122.6750], zoom_start=3, tiles='Mapbox Bright')
     map.choropleth(geo_path=world_geo, data=nation_data,
                  columns=['ids', 'values'],
                  fill_color='YlGn', fill_opacity=0.7, line_opacity=0.2,
