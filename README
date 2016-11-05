@@ -5,5 +5,20 @@ coordinate with HK
 
 tooling:
 python
-download data from clinicaltrials.gov
 folium for viz
+
+clinical trials delimited text file here:
+https://www.ctti-clinicaltrials.org/aact-database
+
+dependencies:
+pip install folium
+pip install pandas
+
+
+map data:
+get world TopoJSON
+
+relate TopoJSON mapping data to clinical trials data with pandas dataframe
+
+ISO codes:
+ISO_3166-1_numeric
